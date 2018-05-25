@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76F602ED-832C-41AC-BB1A-D196E87241D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CuaHangRauCuQua</RootNamespace>
+    <AssemblyName>CuaHangRauCuQua</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>E:\SOF\BunifuUI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlatUI">
+      <HintPath>E:\SOF\FlatUI-master\bin\Debug\FlatUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="crHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crHoaDon.designer.cs">
+      <DependentUpon>crHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crThongKe.Designer.cs">
+      <DependentUpon>crThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangxuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dangxuat.Designer.cs">
+      <DependentUpon>Dangxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanghoahome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hanghoahome.Designer.cs">
+      <DependentUpon>hanghoahome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanghoa_Hanghoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hanghoa_Hanghoa.Designer.cs">
+      <DependentUpon>hanghoa_Hanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanghoa_Nhacungcap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hanghoa_Nhacungcap.Designer.cs">
+      <DependentUpon>hanghoa_Nhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanghoa_Nhomhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hanghoa_Nhomhang.Designer.cs">
+      <DependentUpon>hanghoa_Nhomhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonRP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDonRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="homeContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="homeContent.Designer.cs">
+      <DependentUpon>homeContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuKiemKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhieuKiemKe.Designer.cs">
+      <DependentUpon>PhieuKiemKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phieunhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Phieunhap.Designer.cs">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupDangNhap.Designer.cs">
+      <DependentUpon>PopupDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quanlynhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quanlynhanvien.Designer.cs">
+      <DependentUpon>Quanlynhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThongKe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tieudeHeaderHoadon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tieudeHeaderHoadon.Designer.cs">
+      <DependentUpon>tieudeHeaderHoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TieudeHeaderPhieuKiemKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TieudeHeaderPhieuKiemKe.Designer.cs">
+      <DependentUpon>TieudeHeaderPhieuKiemKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tieudeHeaderPhieunhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tieudeHeaderPhieunhap.Designer.cs">
+      <DependentUpon>tieudeHeaderPhieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tieudeHeaderQLHanghoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tieudeHeaderQLHanghoa.Designer.cs">
+      <DependentUpon>tieudeHeaderQLHanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TieudeHeaderQLNhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TieudeHeaderQLNhanvien.Designer.cs">
+      <DependentUpon>TieudeHeaderQLNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tieudeQLHHHanghoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tieudeQLHHHanghoa.Designer.cs">
+      <DependentUpon>tieudeQLHHHanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tieudeQLHHNhacungcap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tieudeQLHHNhacungcap.Designer.cs">
+      <DependentUpon>tieudeQLHHNhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert.Designer.cs">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tieudeQLHHNhomhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tieudeQLHHNhomhang.Designer.cs">
+      <DependentUpon>tieudeQLHHNhomhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlHoaDonBanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlHoaDonBanHang.designer.cs">
+      <DependentUpon>UserControlHoaDonBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemHoaDon.designer.cs">
+      <DependentUpon>XemHoaDon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="crHoaDon.resx">
+      <DependentUpon>crHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crThongKe.resx">
+      <DependentUpon>crThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangxuat.resx">
+      <DependentUpon>Dangxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanghoahome.resx">
+      <DependentUpon>hanghoahome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanghoa_Hanghoa.resx">
+      <DependentUpon>hanghoa_Hanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanghoa_Nhacungcap.resx">
+      <DependentUpon>hanghoa_Nhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanghoa_Nhomhang.resx">
+      <DependentUpon>hanghoa_Nhomhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoaDonRP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeContent.resx">
+      <DependentUpon>homeContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuKiemKe.resx">
+      <DependentUpon>PhieuKiemKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phieunhap.resx">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupDangNhap.resx">
+      <DependentUpon>PopupDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Quanlynhanvien.resx">
+      <DependentUpon>Quanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ThongKe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tieudeHeaderHoadon.resx">
+      <DependentUpon>tieudeHeaderHoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TieudeHeaderPhieuKiemKe.resx">
+      <DependentUpon>TieudeHeaderPhieuKiemKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tieudeHeaderPhieunhap.resx">
+      <DependentUpon>tieudeHeaderPhieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tieudeHeaderQLHanghoa.resx">
+      <DependentUpon>tieudeHeaderQLHanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TieudeHeaderQLNhanvien.resx">
+      <DependentUpon>TieudeHeaderQLNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tieudeQLHHHanghoa.resx">
+      <DependentUpon>tieudeQLHHHanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tieudeQLHHNhacungcap.resx">
+      <DependentUpon>tieudeQLHHNhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert.resx">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tieudeQLHHNhomhang.resx">
+      <DependentUpon>tieudeQLHHNhomhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlHoaDonBanHang.resx">
+      <DependentUpon>UserControlHoaDonBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemHoaDon.resx">
+      <DependentUpon>XemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
